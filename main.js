@@ -14,7 +14,12 @@ console.log(SOCBook);
 // Complete the function so it returns Liz Rios' favourite fruit
 
 function lizRiosFavFruit() {
-  // Your code goes here...
+  return SOCBook.data.people[10].favoriteFruit
+  // Your code goes here... 
+  /* Find a way to Look up Liz Rios
+     Yes, we ould you click person manually but what if there is 1000s of people?
+     lizRios.path[2].data.favouritefruit */
+  
 }
 
 console.log("Liz Rios' favourite fruit is:", lizRiosFavFruit());
@@ -23,6 +28,7 @@ console.log("Liz Rios' favourite fruit is:", lizRiosFavFruit());
 // Complete the function so it returns Marie David's 2nd friend's name
 
 function marieDavid2ndFriend() {
+  return SOCBook.data.people[15].friends[1].name
   // Your code goes here...
 }
 
@@ -33,6 +39,7 @@ console.log("Marie David's 2nd friend is:", marieDavid2ndFriend());
 // We've helped start breaking down the plan!
 
 function cooperBradyGreeting() {
+  document.getElementById("message").textContent = SOCBook.data.people[18].greeting
   // Your code goes here...
   // Select Cooper Brady's greeting message from the object
   // Select the p tag with the id of message
