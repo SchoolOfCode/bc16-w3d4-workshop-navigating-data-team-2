@@ -102,9 +102,9 @@ console.log(getAddress(0));
 // A profile should include their name, age, and their image >>>> pull objects from the array and display them in the webpage 
 // >>>> Finding the object and place it in the DOM
 // Remember, break this down and tackle it step by step!
-// use their IDs as a starting point
+// use their IDs as a starting point.
 
-
+a
 
 function displayUsers () {
   const people = document.getElementById("profiles");
