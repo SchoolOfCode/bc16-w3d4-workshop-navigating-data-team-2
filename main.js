@@ -58,7 +58,7 @@ cooperBradyGreeting();
 
 function findPersonByEmail(email) {
   let foundEmail = null
-  for (i=0; i<SOCBook.data.people.length; i++) {
+  for (let i=0; i<SOCBook.data.people.length; i++) {
     // check the email against the argument
     if (email === SOCBook.data.people[i].email) {
       foundEmail = SOCBook.data.people[i].name;
@@ -73,11 +73,15 @@ console.log("What I found:", found);
 
 // Task 5
 // Make a list containing only the people's names who's favourite fruit is a mango
+// people who's faocuite fruit === mango 
 
 function getMangoLovers() {
   let mangoLovers = [];
-
-  // Your code goes here...
+  for (let i=0; i<SOCBook.data.people.length; i++) {
+    if (SOCBook.data.people[i].favoriteFruit === "mango") {
+      mangoLovers.push (SOCBook.data.people[i].name) 
+    }
+  };
 
   return mangoLovers;
 }
