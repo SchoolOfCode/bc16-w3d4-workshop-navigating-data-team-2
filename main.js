@@ -57,6 +57,14 @@ cooperBradyGreeting();
 // If we don't, return null
 
 function findPersonByEmail(email) {
+  let foundEmail = null
+  for (i=0; i<SOCBook.data.people.length; i++) {
+    // check the email against the argument
+    if (email === SOCBook.data.people[i].email) {
+      foundEmail = SOCBook.data.people[i].name;
+    }
+  };
+  return foundEmail
   // Your code goes in here...
 }
 
