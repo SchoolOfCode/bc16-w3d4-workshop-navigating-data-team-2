@@ -99,5 +99,35 @@ console.log(getAddress(0));
 
 // Task 7
 // Show a profile for each person in the ul with id "profiles"
-// A profile should include their name, age, and their image
+// A profile should include their name, age, and their image >>>> pull objects from the array and display them in the webpage 
+// >>>> Finding the object and place it in the DOM
 // Remember, break this down and tackle it step by step!
+// use their IDs as a starting point
+
+
+
+function displayUsers () {
+  const people = document.getElementById("profiles");
+
+  for (let i=0; i<SOCBook.data.people.length; i++){
+    const person = SOCBook.data.people[i];
+
+    const profile = document.createElement("div");
+    
+    const name = document.createElement("p");
+    name.textContent = `Name: ${person.name}`
+
+    const age  = document.createElement("p");
+    age.textContent = `Age: ${person.age}`;
+
+    const image = document.createElement("img");
+    image.src = person.picture;
+
+    profile.appendChild(name);
+    profile.appendChild(age);
+    profile.appendChild(image);
+
+    people.appendChild(profile);
+   }
+  }
+displayUsers();
