@@ -93,6 +93,8 @@ console.log("Who loves mango?", getMangoLovers());
 
 function getAddress(positionInArray) {
   // Your code goes here...
+  let peopleIndex = SOCBook.data.people[positionInArray];
+  return peopleIndex["full address"]
 }
 
 console.log(getAddress(0));
